@@ -10,11 +10,12 @@ namespace Tyuiu.CybenkoEA.Sprint2.Task1.V28.Lib
             res[0] = (a < b) | ((c != d) & !(b <= a)) ^ (c > d); // true
             res[1] = (a > b) & (d >= c) & false; // false
             res[2] = (c == d) & (b > a); // true
-            res[3] = (a == b) | ((c < d) & !(d == c)) ^ (b >= a); // false
+            res[3] = (a == b) | false; // false
             res[4] = (b > a) | ((c == d) & !(a > b)) ^ (d != c); // true
             res[5] = (c < d) & (a >= b); // false
             return res;
         }
+
 
     }
 }
