@@ -8,17 +8,17 @@ namespace Tyuiu.CybenkoEA.Sprint2.Task1.V28.Lib
         {
             bool[] res = new bool[6];
 
-            res[0] = (a < b) | (c == d) && !(b > a) ^ (c >= d);
+            res[0] = (a < b) | ((c == d) & !(b > a)) ^ (c >= d);
 
-            res[1] = (a > b) & (c != d) || !(b <= a) ^ (c < d);
+            res[1] = (a > b) & ((c != d) | !(b <= a)) ^ (c < d);
 
-            res[2] = (a <= b) | (c == d) && !(b < a) ^ (c > d);
+            res[2] = (c == d) & ((a != b) | !(c <= d)) ^ (b > a);
 
-            res[3] = (a >= b) & (c != d) || !(b == a) ^ (c <= d);
+            res[3] = (a > b) | ((c != d) & !(a < b)) ^ (c == d);
 
-            res[4] = (a != b) | (c >= d) && !(b > c) ^ (a < d);
+            res[4] = (b > a) & ((c == d) | !(a >= b)) ^ (d >= c);
 
-            res[5] = (a == b) & (c <= d) || !(b < c) ^ (a > d);
+            res[5] = (a == b) | ((c < d) & !(b > a)) ^ (c != d);
 
             return res;
         }
