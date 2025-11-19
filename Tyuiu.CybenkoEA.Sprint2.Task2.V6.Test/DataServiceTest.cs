@@ -16,4 +16,5 @@ namespace Tyuiu.CybenkoEA.Sprint2.Task2.V6.Test
             Assert.AreEqual(expected, res);
         }
     }
+}
 
